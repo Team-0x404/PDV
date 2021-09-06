@@ -1,0 +1,146 @@
+/* ---------------- Breadcrumbs ---------------- */
+
+.breadcrumbs {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    @psize: 6px;
+
+    padding-top: @psize;
+    padding-bottom: @psize + 4px;
+
+    @color-1: @c-text;
+    @color-2: black;
+
+    @shift: 8px;
+
+    font-family: @font-l;
+    font-size: 16px;
+    color: @color-2;
+
+    letter-spacing: 1.05px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-left: @shift;
+    }
+
+    &__item:after {
+        content: '\25c6';
+        margin-left: @shift;
+        font-size: 12px;
+        color: @color-1;
+    }
+
+    &__item:first-child {
+        margin-left: 0;
+    }
+
+    &__item:last-child:after {
+        display: none;
+    }
+
+    &__link {
+        display: inline-block;
+        color: @color-1;
+        // line-height: 1;
+    }
+}
+
+.breadcrumbs-2 {
+
+    display: flex;
+    justify-content: flex-start;
+
+    min-height: 60px;
+
+    @color: rgba(41, 41, 43, 0.71);
+    @color-last: #29292b;
+
+    @padding-right: 25px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+
+        padding-right: @padding-right;
+
+        font-size: 20px;
+        color: @color;
+    }
+
+    @angle: 25deg;
+
+    @arrow-width: 10px;
+    @arrow-height: 1px;
+
+    @arrow-right-fix: 0;
+
+    @arrow-1-fix: 1px;
+    @arrow-2-fix: -1px;
+
+    &__item:before, &__item:after {
+        content: '';
+
+        width: @arrow-width;
+        height: @arrow-height;
+
+        background-color: @color;
+
+        position: absolute;
+        .absolute-vertical-center2();
+
+        right: (@padding-right / 2) - (@arrow-width / 2) + @arrow-right-fix;
+    }
+
+    &__item:before {
+        top: -@arrow-width / 2 + @arrow-1-fix;
+        transform: rotate(@angle);
+    }
+
+    &__item:after {
+        top: (@arrow-width / 2) + @arrow-2-fix;
+        transform: rotate(-@angle);
+    }
+
+    &__item:last-child:before, &__item:last-child:after {
+        display: none;
+    }
+
+    &__item:last-child {
+        color: @color-last;
+    }
+
+    &__link {
+        color: @color;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 990px) {
+
+    .breadcrumbs {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 620px) {
+
+    .breadcrumbs {
+        font-size: 14px;
+    }
+}

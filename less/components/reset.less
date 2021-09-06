@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div, p, span, a, header, footer, main, article, section,
+form, input, textarea, select, button, ul, ol, li, i {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ol {
+    list-style-type: decimal;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+select, textarea {
+    outline: 0;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    // IE FIX :AFTER DOES NOT WORK
+    overflow: visible;
+}
+
+// Делает нормальный вид на iPhone
+input[type='submit'], input[type='text'], input[type='password'], textarea {
+    -webkit-appearance: none;
+}
+
+// Убирает высоту у firefox
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+// for IE
+main {
+    display: block;
+}
