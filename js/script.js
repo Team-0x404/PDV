@@ -1170,3 +1170,8 @@ function Tabs(options = {}) {
         }
     }
 }
+document.addEventListener('DOMContentLoaded', onLoad);
+
+function onLoad() {
+
+}
