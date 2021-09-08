@@ -1,0 +1,60 @@
+.intro-block {
+  padding-top: 107px;
+  padding-bottom: 173px;
+  background: linear-gradient(90deg, #ffffff 65%, #0b7572 39%);
+}
+.intro-block__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro-block__column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+}
+.intro-block__column:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.intro-block__title {
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: 52px;
+  font-weight: bold;
+  color: #363738;
+}
+.intro-block__text {
+  margin-bottom: 40px;
+  font-size: 16px;
+  color: #6b6b6c;
+}
+.intro-block__link {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  border-bottom: 3px solid #ffce50;
+  transition: all 0.3s;
+}
+.intro-block__link:hover {
+  color: #ffce50;
+  border-bottom: 3px solid transparent;
+}
+.intro-block__image {
+  width: 635px;
+  border-radius: 30px;
+}
+/* #m1300 */
+/* #m1200 */
+/* #m1100 */
+/* #m900 */
+/* #m800 */
+/* #m700 */
+/* #m600 */
+/* #m500 */
+/* #m400 */
+/* #m400 */
+/* #m300 */
