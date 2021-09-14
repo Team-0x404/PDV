@@ -96,10 +96,10 @@ main {
 /* ---------------- Basic elements ---------------- */
 body {
   min-width: 970px;
-  font-family: 'oswald_regularregular', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 14px;
   color: black;
-  line-height: 1.45;
+  line-height: 1.35;
 }
 .s-main {
   min-height: 300px;
@@ -124,7 +124,7 @@ body {
 .s-main__wrapper:after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 .s-main--no-margin {
   margin-top: 0 !important;
@@ -183,14 +183,14 @@ h3 {
   margin-top: 10px;
   margin-bottom: 15px;
   position: relative;
-  font-family: 'oswaldmedium', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   color: black;
   line-height: 1.3;
   text-transform: uppercase;
 }
 .title:after {
-  content: "";
+  content: '';
   position: absolute;
   height: 1px;
   width: 90px;
@@ -247,7 +247,7 @@ h3 {
   position: relative;
   border: 1px solid black;
   border-radius: 25px;
-  font-family: 'oswald_regularregular', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 14px;
   color: black;
   letter-spacing: 0.5px;
@@ -266,7 +266,7 @@ h3 {
 /* ---------------- Form elements ---------------- */
 .label {
   display: block;
-  font-family: 'oswald_regularregular', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 15px;
   color: black;
   letter-spacing: 0.5px;
@@ -275,7 +275,7 @@ h3 {
   position: relative;
   left: 2px;
   color: black;
-  content: "* ";
+  content: '* ';
   font-weight: bold;
 }
 .input-wrapper {
@@ -290,7 +290,7 @@ h3 {
   padding-right: 20px;
   border: 1px solid #ebebeb;
   border-radius: 25px;
-  font-family: 'oswald_regularregular', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 15px;
   color: #686868;
   letter-spacing: 1px;
@@ -342,7 +342,7 @@ h3 {
 }
 .textarea::placeholder {
   color: #b1b1b1;
-  font-family: 'oswaldlight', sans-serif;
+  font-family: "oswaldlight", sans-serif;
   letter-spacing: 1.05px;
 }
 .select-wrapper {
@@ -351,7 +351,7 @@ h3 {
 }
 .select-wrapper:after,
 .select-wrapper:before {
-  content: "";
+  content: '';
   width: 7px;
   height: 1px;
   background-color: #7a7a7a;
@@ -417,7 +417,7 @@ h3 {
 .checkbox-radio__input + .checkbox-radio__text:before {
   box-sizing: border-box;
   display: block;
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   margin-top: auto;
@@ -425,7 +425,7 @@ h3 {
   top: 0;
   bottom: 0;
 }
-.checkbox-radio__input[type="radio"] + .checkbox-radio__text:before {
+.checkbox-radio__input[type='radio'] + .checkbox-radio__text:before {
   border: 1px solid black;
   background-color: #ffffff;
 }
@@ -443,7 +443,7 @@ h3 {
 .checkbox-radio__text:after {
   box-sizing: border-box;
   display: none;
-  content: "";
+  content: '';
   position: absolute;
 }
 .checkbox-radio__text--radio:after {
@@ -477,7 +477,7 @@ h3 {
 .label-radio {
   display: block;
   position: relative;
-  font-family: 'oswald_regularregular', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 15px;
   color: #444;
   letter-spacing: 0.5px;
@@ -532,7 +532,7 @@ h3 {
   top: 100%;
   padding-left: 8px;
   padding-right: 8px;
-  font-family: 'oswald_regularregular', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 13px;
   color: white;
   letter-spacing: 1px;
@@ -546,7 +546,7 @@ h3 {
   position: absolute;
   top: -12px;
   left: 50%;
-  content: "";
+  content: '';
   display: block;
   margin-left: -6px;
   border: 6px solid transparent;
@@ -583,7 +583,7 @@ h3 {
 .pm:after,
 .pm:before {
   display: none;
-  content: "";
+  content: '';
   background-color: white;
   position: absolute;
   margin-left: auto;
@@ -630,7 +630,7 @@ h3 {
   z-index: 0;
 }
 .arrow:after {
-  content: "";
+  content: '';
   width: 8px;
   height: 8px;
   border: 1px solid #333333;
@@ -684,7 +684,7 @@ h3 {
 }
 .close-button:before,
 .close-button:after {
-  content: "";
+  content: '';
   height: 28px;
   width: 2px;
   position: absolute;
@@ -702,7 +702,7 @@ h3 {
   z-index: 0;
 }
 .menu-arrow:after {
-  content: "\25BC";
+  content: '\25BC';
   height: 8px;
   line-height: 10px;
   position: absolute;
@@ -816,7 +816,7 @@ h3 {
   justify-content: flex-start;
   padding-top: 6px;
   padding-bottom: 10px;
-  font-family: 'oswaldlight', sans-serif;
+  font-family: "oswaldlight", sans-serif;
   font-size: 16px;
   color: black;
   letter-spacing: 1.05px;
@@ -921,7 +921,7 @@ h3 {
   position: relative;
 }
 .mobile-button__text {
-  font-family: 'oswald_regularregular', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 22px;
   color: white;
   letter-spacing: 1px;
@@ -1018,12 +1018,12 @@ h3 {
   padding-right: 25px;
   border: 1px solid black;
   border-radius: 15px;
-  font-family: 'oswald_regularregular', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 15px;
   color: #686868;
 }
 .paginator__select > option {
-  font-family: 'oswald_regularregular', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 15px;
 }
 .paginator__list {
@@ -1091,7 +1091,7 @@ h3 {
   align-items: center;
   width: 100%;
   height: 100%;
-  font-family: 'oswald_regularregular', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 15px;
   color: #686868;
 }
@@ -1117,7 +1117,7 @@ h3 {
   width: 42px;
   height: 42px;
   border-radius: 5px;
-  font-family: 'oswald_regularregular', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 18px;
 }
 .paginator--v2__item:hover {
@@ -1214,6 +1214,7 @@ h3 {
 .intro-block__text {
   margin-bottom: 40px;
   font-size: 16px;
+  font-family: "PT Sans", sans-serif;
   color: #6b6b6c;
 }
 .intro-block__link {
@@ -1231,6 +1232,52 @@ h3 {
 .intro-block__image {
   width: 635px;
   border-radius: 30px;
+}
+/* #m1300 */
+/* #m1200 */
+/* #m1100 */
+/* #m900 */
+/* #m800 */
+/* #m700 */
+/* #m600 */
+/* #m500 */
+/* #m400 */
+/* #m400 */
+/* #m300 */
+.services-block {
+  margin-top: -111px;
+  margin-bottom: 100px;
+}
+.services-block__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px 56px;
+  box-shadow: 0px 4px 20px 0px #00000026;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.services-block__card {
+  max-width: 228px;
+  padding-right: 105px;
+  box-sizing: content-box;
+  border-right: 1px solid #d7d7dd;
+}
+.services-block__card:nth-last-child(1) {
+  padding-right: 0;
+  border-right: none;
+}
+.services-block__img {
+  margin-bottom: 24px;
+}
+.services-block__title {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+.services-block__text {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6b6b6c;
 }
 /* #m1300 */
 /* #m1200 */
