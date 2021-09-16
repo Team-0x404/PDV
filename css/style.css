@@ -1246,7 +1246,7 @@ h3 {
 /* #m300 */
 .services-block {
   margin-top: -111px;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 .services-block__row {
   display: flex;
@@ -1290,6 +1290,9 @@ h3 {
 /* #m400 */
 /* #m400 */
 /* #m300 */
+.votes-block {
+  padding-bottom: 100px;
+}
 .votes-block__title {
   justify-content: start;
   font-size: 48px;
@@ -1314,9 +1317,49 @@ h3 {
 .votes-block__card {
   display: flex;
   margin-bottom: 16px;
-  padding: 40px 125px 48px 96px;
+  padding: 40px 125px 48px 40px;
   box-shadow: 0px 3px 15px 0px #0000001f;
+  border: 1px solid transparent;
   border-radius: 10px;
+  transition: all 0.6s;
+}
+.votes-block__card-radio-wrapper {
+  margin-top: 8px;
+  margin-right: 32px;
+}
+.votes-block__card-custom-radio {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #cbcbcd;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px 0px #00000033 inset;
+}
+.votes-block__card-custom-radio::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-5px, -5px);
+  opacity: 0;
+}
+.votes-block__card-radio {
+  opacity: 0;
+}
+.votes-block__card-radio:checked + .votes-block__card-custom-radio::before {
+  opacity: 1;
+  background-color: #0b7572;
+  transition: all 0.6s;
+}
+.votes-block__card-radio:focus + .votes-block__card-custom-radio {
+  border: 1px solid #9c9b9b;
+  transition: all 0.6s;
 }
 .votes-block__card-title {
   margin-bottom: 24px;
@@ -1328,6 +1371,24 @@ h3 {
   font-size: 16px;
   font-family: "PT Sans", sans-serif;
   color: #6b6b6c;
+}
+.votes-block__card:hover {
+  border: 1px solid #0b7572;
+}
+.votes-block__column:nth-child(2) {
+  margin-right: 120px;
+}
+.votes-block__counter-title {
+  font-size: 20px;
+  line-height: 1.3;
+}
+.votes-block__counter-text {
+  font-size: 20px;
+  border-bottom: 3px solid #ffce50;
+}
+.votes-block__counter-number {
+  font-size: 54px;
+  line-height: 1.81;
 }
 /* #m1300 */
 /* #m1200 */
